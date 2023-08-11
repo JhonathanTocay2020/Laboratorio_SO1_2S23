@@ -6,11 +6,10 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: secret
     volumes:
-      - base_practica1:/var/lib/mysql      
+      - base_mysql:/var/lib/mysql      
     ports:
       - "3306:3306"
   backend:
-    build: ./backend 
     image: "app_go"
     container_name: 'Backend_Go'
     environment:
@@ -22,4 +21,4 @@ services:
     ports:
       - "8000:8000"
 volumes:
-  base_practica1: 
+  base_mysql: 
