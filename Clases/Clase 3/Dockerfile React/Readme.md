@@ -1,0 +1,1 @@
+La Version 1 pesa bastante mientras que en la Version 2 se utiliza alpine para reducir el tamaño

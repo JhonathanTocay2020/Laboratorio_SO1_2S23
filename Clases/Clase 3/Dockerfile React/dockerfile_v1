@@ -1,0 +1,20 @@
+FROM node:16.18.0
+# create & set working directory
+RUN mkdir -p /src
+WORKDIR /src
+# copy source files
+COPY . /src
+# install dependencies
+RUN npm install
+# start app
+RUN npm run build
+EXPOSE 3000
+# start app
+CMD ["npm", "start"]
+
+
+### CREAR LA IMAGEN LOCALMENTE
+### docker build --tag nombre_imagen .
+
+### CORRER LA IMAGEN
+### docker run -p 3000:3000 nombre_imagen
