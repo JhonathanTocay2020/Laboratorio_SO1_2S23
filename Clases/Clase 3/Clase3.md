@@ -143,3 +143,5 @@ sudo apt --fix-broken install
 ```sh
 sudo snap install dbeaver-ce
 ```
+
+### [Grabacion_Clase3](https://drive.google.com/file/d/1n8Jzq7zNTdEIWR6WZB3w3zheYIgQaWqM/view?usp=sharing)
