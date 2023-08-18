@@ -1,0 +1,1 @@
+cmd_/home/jhonathan/Escritorio/Laboratorio_SO1_2S23/Clases/Clase4/Ejemplo/Modulo1/modulo_clase4.mod := printf '%s\n'   modulo_clase4.o | awk '!x[$$0]++ { print("/home/jhonathan/Escritorio/Laboratorio_SO1_2S23/Clases/Clase4/Ejemplo/Modulo1/"$$0) }' > /home/jhonathan/Escritorio/Laboratorio_SO1_2S23/Clases/Clase4/Ejemplo/Modulo1/modulo_clase4.mod

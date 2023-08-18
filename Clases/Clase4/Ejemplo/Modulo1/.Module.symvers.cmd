@@ -1,0 +1,1 @@
+cmd_/home/jhonathan/Escritorio/Laboratorio_SO1_2S23/Clases/Clase4/Ejemplo/Modulo1/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/jhonathan/Escritorio/Laboratorio_SO1_2S23/Clases/Clase4/Ejemplo/Modulo1/Module.symvers -T /home/jhonathan/Escritorio/Laboratorio_SO1_2S23/Clases/Clase4/Ejemplo/Modulo1/modules.order -i Module.symvers -e 
