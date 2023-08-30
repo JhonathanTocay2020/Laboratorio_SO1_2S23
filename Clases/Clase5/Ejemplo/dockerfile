@@ -1,0 +1,23 @@
+FROM node:18.16.0-alpine
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3300
+
+CMD ["node","index.js"]
+
+# Construir la imagen de Docker
+# docker build -t jhonathantocay/clase5_so1 .
+
+# Correr Imagen de docker 
+# sudo docker run -p 3300:3300 jhonathantocay/clase5_so1
+
+# docker push jhonathantocay/clase5_so1
+
+# sudo docker pull jhonathantocay/clase5_so1
