@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: grpc-ruta
+  namespace: so1-clase7
 spec:
   selector:
     matchLabels:

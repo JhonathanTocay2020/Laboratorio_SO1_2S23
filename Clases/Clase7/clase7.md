@@ -105,3 +105,23 @@ kubectl logs -f pod/name
 kubectl logs -f deployment/name
 kubectl describe deployments name
 ```
+
+## Instalar Helm y Crear nginx para uso de ingress
+Crear un namespace para ingress y uso de helm que servirá como gestor de los paquetes de k8s para el manejo de ingress con nginx.
+
+```
+kubectl create ns nginx-ingress
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx 
+helm repo update 
+helm install nginx-ingress ingress-nginx/ingress-nginx -n nginx-ingress
+helm list -n nginx
+```
+Comando para visualizar los servicios que se tendrán dentro del namespace de nginx.
+```
+kubectl get services -n nginx-ingress
+```
+### Optenemos IP Externa
+Obtenemos la IP externa por donde ingresan los datos
+```
+kubectl get svc -n nginx-ingress
+```
